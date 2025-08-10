@@ -1,0 +1,159 @@
+// Override this file to add your own SCSS styling.
+
+$text-primary-color: #ff3860;
+
+
+.site-header-container {
+    color: #fff;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.67) !important;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.site-header-container {
+    .scrim  {
+    padding: 9em 1em !important;
+
+      .site-header {
+        text-align: center;
+      }
+      .title {
+        font-size: 3rem;
+        color: #fff;
+      }
+  }
+
+}
+
+.home-section {
+  padding: 1rem 0;
+}
+.home-section:nth-of-type(even) {
+  background: #fff;
+}
+
+
+
+.wg-about{
+
+  ul.ul-edu li .description p.institution {
+    font-size: 0.75rem;
+    //color: $text-primary-color;
+    color: #000000;
+  }
+  .edu-details {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+#recent_news {
+  .news-list {
+
+  }
+  .news-title {
+    padding: 0 0 1.5rem 0;
+  }
+  .news-date {
+    padding: 0 3rem 0 1rem;
+  }
+}
+
+
+.page-people {
+  .media.stream-item img {
+    max-width: 100%;
+  }
+
+  .card .card-text {
+    padding: 0.75rem 0rem;
+  }
+}
+
+
+.page-research {
+  .research-list-video {
+    width: auto;
+    max-width: 150px;
+  }
+}
+
+#research {
+  .research-list-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+
+    .card-simple:first-of-type {
+      margin-top: 20px !important;
+    }
+  }
+
+  .section-heading h1 {
+    margin: 20px 0 10px 0;
+  }
+}
+
+
+.page-publication {
+   .year-flag {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+
+     .year-text {
+       font-weight: 300;
+       font-size: 2rem;
+       color: rgba(0, 0, 0, .1);
+       padding: 1rem 0 1.5rem;
+       text-align: right;
+     }
+  }
+
+  .pub-title {
+   font-weight: bold;
+  }
+  .bib-text {
+  }
+}
+
+
+
+
+.experience-icon-image {
+  width: 80px;
+  max-height: 80px;
+  max-width: unset;
+}
+
+.home-prj-img-icon-wrap {
+  /*display: grid;
+  place-items: center;*/
+
+  .home-project-icon-image {
+    /*max-width: 150px !important;*/
+    margin-top: 0.5rem;
+
+  }
+}
+
+
+
+.home-pubs-section {
+  .pub-title {
+    font-weight: bold;
+  }
+}
+
+
+// 手机
+@media (max-width: 780px) {
+
+  .wg-about {
+    // h1 {
+    //  text-align: center;
+    //}
+  }
+  .research-list-wrap {
+    grid-template-columns: 1fr !important;
+  }
+
+}

@@ -1,0 +1,56 @@
+{{- define "main" -}}
+
+{{ $page := . }}
+{{ $featured := .Resources.GetMatch "*featured*" }}
+{{ $title := .Title }}
+
+
+
+
+<article class="article article-research">
+
+  {{/* partial "page_header.html" . */}}
+
+
+  <div class="article-container pt-3">
+    <h1>{{ $title }}</h1>
+
+    {{ with $page.Params.subtitle }}
+    <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
+    {{end}}
+
+  </div>
+
+  {{/* Featured image */}}
+  {{if $featured}}
+  <div class="article-header  article-container mt-4 mb-4" >
+
+    <div class=" ">
+
+      {{ if eq  (lower $featured.MediaType.FirstSuffix.Suffix) "mp4" }}
+      <video autoplay="" loop="" muted="">
+        <source src="{{ $featured.RelPermalink   }}" type="video/mp4">
+      </video>
+      {{ else }}
+      <img src="{{ $featured.RelPermalink }}"  class="featured-image" />
+      {{ end }}
+
+    </div>
+  </div>
+  {{end}}
+
+
+  <div class="article-header">
+  </div>
+
+  <div class="article-container">
+
+    <div class="article-style">
+      {{ .Content }}
+    </div>
+
+    {{ partial "page_footer" . }}
+
+  </div>
+</article>
+{{- end -}}

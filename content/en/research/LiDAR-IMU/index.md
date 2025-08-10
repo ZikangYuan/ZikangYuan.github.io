@@ -1,0 +1,11 @@
+---
+title: "Development of a LiDAR-IMU Odometry Framework Based on Sweep Reconstruction"
+summary: "SLAM, Sensor Fusion, LIO, Localization"
+date: 2024-12-15
+featured: true
+# 详情页面的 社交按钮图标 不展示 
+share: false
+
+---
+
+This project proposes a novel LiDAR-Inertial odometry (LIO), named SR-LIO, based on an error state iterated Kalman filter (ESIKF) framework. We adapt the sweep reconstruction method, which segments and reconstructs raw input sweeps from spinning LiDAR to obtain reconstructed sweeps with higher frequency. We found that such method can effectively reduce the time interval for each iterated state update, improving the state estimation accuracy and enabling the usage of ESIKF framework for fusing high-frequency IMU and low-frequency LiDAR. To prevent inaccurate trajectory caused by multiple distortion correction to a particular point, we further propose to perform distortion correction for each segment. Experimental results on four public datasets demonstrate that our SR-LIO outperforms all existing state-of-the-art methods on accuracy, and reducing the time interval of iterated state update via the proposed sweep reconstruction can improve the accuracy and frequency of estimated states.

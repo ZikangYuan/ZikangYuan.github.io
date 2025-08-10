@@ -1,0 +1,51 @@
+{{- define "main" -}}
+
+{{- $items_type := "people" -}}
+{{- $items_count := .Params.content.count | default 65535 -}}
+
+
+{{/* Query */}}
+{{- $query := where (where site.RegularPages "Type" $items_type) "Params.shown" true -}}
+
+{{- $count := len $query -}}
+
+{{/* Sort */}}
+{{/* $sort_by := "weight" */}}
+{{ $query = sort $query ".Params.date" "desc" }}
+
+{{/* Limit */}}
+{{ $query = first $items_count $query }}
+
+
+    {{/* $projects := .Site.Data.people.people */}}
+
+
+
+{{/* 头部图片 */}}
+<div class="site-header-container has-cover" style='background-image: url({{ .Params.head_img_src | relURL}});'>
+    <div class="scrim has-cover">
+        <div class="site-header">
+            <h1 class="title">{{ .Title }}</h1>
+            <p class="subtitle">{{ .Params.subtitle }}</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="universal-wrapper page-research container">
+
+    <div class="pt-3 pb-3">
+      <h1>{{ .Title }}</h1>
+    </div>
+      <div class="row">
+	      {{ $widget_args := dict "root" $ "page" .Page   }}
+	      {{ partial "widgets/featured" $widget_args }}
+
+      </div>
+
+
+  </div>
+
+{{- end -}}

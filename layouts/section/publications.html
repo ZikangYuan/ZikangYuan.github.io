@@ -1,0 +1,100 @@
+{{- define "main" -}}
+
+{{ $st := . }}
+
+
+{{- $query :=  sort $st.Params.pubs_list "year" "desc" -}}
+
+{{/* 头部图片 */}}
+<div class="site-header-container has-cover" style='background-image: url({{ .Params.head_img_src | relURL}});'>
+    <div class="scrim has-cover">
+        <div class="site-header">
+            <h1 class="title">{{ .Title }}</h1>
+            <p class="subtitle">{{ .Params.subtitle }}</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="universal-wrapper page-publication container">
+
+    <div class="pt-3 pb-3">
+        <h1>{{ .Title }}</h1>
+    </div>
+
+  <script>
+    function toggleBibTex(elementId) {
+     $(`#bibText${elementId}`).toggle();
+
+      // const element = document.getElementById(`bibText${elementId}`);
+      //
+      // console.log('====99')
+      // if (element.style.display === 'none') {
+      //   element.style.display = 'block';
+      // } else {
+      //   element.style.display = 'none';
+      // }
+
+    }
+  </script>
+
+    <div class="pub-list-wrap pb-5">
+
+        {{- $year_flag := "" -}}
+      {{ range $index, $item :=$st.Params.pubs_list }}
+
+
+        {{if ne $year_flag $item.year }}
+       <div class="year-flag">
+         <div class="year-text">
+           {{ $item.year }}
+         </div>
+       </div>
+        {{- $year_flag = $item.year -}}
+        {{ end }}
+
+      <div class="media stream-item view-compact" style="align-items: stretch;">
+        <div class="media-body">
+
+
+          <div>
+              <i class="far fa-file-alt pub-icon" ></i>
+            <span class="pub-author">{{ $item.authors  | markdownify | emojify }}</span>.
+            <span class="pub-title">{{ $item.title  | markdownify | emojify }}</span>.
+            {{ with $item.journal }}<span class="pub-journal">{{ . | markdownify | emojify }}</span> {{ end }}
+          </div>
+
+            {{with $item.links}}
+              <div class="btn-links">
+                  {{ range $idx, $item2 := . }}
+                    <a class="btn btn-outline-primary btn-page-header btn-sm"
+                       href="{{ $item2.url }}"
+                      {{with $item2.click_paras}}onclick="toggleBibTex({{$index}}); return false"{{end}}
+                    >
+                        {{ $item2.name  | markdownify | emojify }}
+                    </a>
+                  {{end}}
+              </div>
+            {{end}}
+
+          {{with $item.bibTex}}
+          <div class="bib-text" id="bibText{{$index}}" style="display: none;">
+            <pre> {{   . | safeHTML }}</pre>
+          </div>
+          {{end}}
+
+        </div>
+       {{/* <div class="ml-3 home-prj-img-icon-wrap">
+            {{ with .image }} <img src="{{ . }}" class="home-project-icon-image" loading="lazy" /> {{ end }}
+        </div>*/}}
+      </div>
+      {{ end }}
+
+    </div>
+
+</div>
+
+
+{{- end -}}

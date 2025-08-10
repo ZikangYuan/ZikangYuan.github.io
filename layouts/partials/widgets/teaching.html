@@ -1,0 +1,47 @@
+{{ $ := .root }}
+{{ $page := .page }}
+{{ $columns := $page.Params.design.columns | default "2" }}
+
+<!-- Experience widget -->
+<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
+  {{ with $page.Content }}{{ . }}{{ end }}
+
+  {{ if $page.Params.experience }}
+  {{ $exp_len := len $page.Params.experience }}
+
+
+
+  {{/* Default to user's custom order (as requested in #1761) as Hugo doesn't support multiple sorts on params. */}}
+  {{ range $idx, $key := $page.Params.experience }}
+  <div class="row experience">
+
+    <!-- Content -->
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+
+          <div class="section-subheading card-title exp-title my-0">{{.title | markdownify | emojify}}</div>
+
+          {{with .description}}<div class="card-text">{{. | markdownify | emojify}}</div>{{end}}
+
+          {{with .links}}
+          <div class="btn-links">
+            {{ range $idx, $item := . }}
+            <a class="btn btn-outline-primary btn-page-header btn-sm"
+               href="{{ $item.url }}">
+              {{ $item.name  | markdownify | emojify }}
+            </a>
+            {{end}}
+          </div>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{end}}
+
+
+
+
+  {{end}}
+</div>

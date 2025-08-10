@@ -1,0 +1,30 @@
+{{ $ := .root }}
+{{ $st := .page }}
+{{ $autolink := default true $st.Params.content.autolink }}
+{{ $data := $st.Params.content }}
+
+{{ $form_provider := lower $st.Params.content.form.provider | default "" }}
+{{ $form_provider_legacy := $st.Params.email_form | default 0 }}
+
+{{ $use_netlify_form := eq $form_provider "netlify" | or (eq $form_provider_legacy 1) }}
+{{ $use_formspree_form := eq $form_provider "formspree" | or (eq $form_provider_legacy 2) }}
+{{ $use_form := or $use_netlify_form $use_formspree_form }}
+
+{{ $use_netlify_captcha := $st.Params.content.form.netlify.captcha | default true }}
+{{ $use_formspree_captcha := $st.Params.content.form.formspree.captcha | default false }}
+
+{{ $columns := $st.Params.design.columns | default "2" }}
+
+<div class="col-12 {{if eq $columns "2"}}col-lg-8{{end}}">
+
+
+  <div class="row">
+    <div class="col-12 col-md-8 pb-3">
+      {{ with $st.Content }}{{ . }}{{ end }}
+    </div>
+    <div class="col-12 col-md-4">
+      <img src="{{ $st.Params.contact_img | relURL }}" />
+    </div>
+  </div>
+
+</div>

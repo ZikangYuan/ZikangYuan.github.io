@@ -1,0 +1,46 @@
+{{- define "main" -}}
+
+    {{ $projects := .Site.Data.projects.projects }}
+
+
+    {{/* partial "page_header.html" . */}}
+
+  <div class="universal-wrapper page-papers">
+
+    <div class="pt-3 pb-3">
+      <h1>Projects</h1>
+    </div>
+      {{ range $index, $item := $projects }}
+
+        <div class="card media stream-item">
+          <div class="card-body">
+
+            <div class="section-subheading card-title exp-title my-0">
+                {{ $item.title | markdownify | emojify}}
+            </div>
+            <div class=" author-info">
+                {{ $item.author_info | markdownify | emojify}}
+            </div>
+
+              {{with $item.description}}<div class="card-text">{{ . | markdownify | emojify}}</div>{{end}}
+
+              {{ with $item.links }}
+                <div class="btn-links">
+                    {{ range $idx, $link := . }}
+                      <a class="btn btn-outline-primary btn-page-header btn-sm"
+                         href="{{ $link.url }}">
+                          {{ $link.name  | markdownify | emojify }}
+                      </a>
+                    {{end}}
+                </div>
+              {{end}}
+          </div>
+        </div>
+
+      {{end}}
+
+
+
+  </div>
+
+{{- end -}}
