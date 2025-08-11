@@ -11,7 +11,7 @@ pubs_list:
   
   - title: "Voxel-SVIO: Stereo Visual-Inertial Odometry based on Voxel Map"
     authors: "**Zikang Yuan**, Fengtian Lang, Jie Deng, Hongcheng Luo, Xin Yang"
-    journal: "RA-L 2025 (accept without revision)"
+    journal: "RA-L 2025 (**accept without revision**)"
     year: 2025
     links:
       - name: PDF(arXiv)
@@ -231,7 +231,7 @@ pubs_list:
   
   - title: "Robust and Efficient RGB-D SLAM in Dynamic Environments"
     authors: "Xin Yang, **Zikang Yuan**, Dongfu Zhu, Cheng Chi, Kun Li, Chunyuan Liao"
-    journal: "TMM 2020"
+    journal: "TMM 2020 (**corresponding author**)"
     year: 2020
     links:
       - name: PDF(arXiv)
