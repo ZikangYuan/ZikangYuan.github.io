@@ -54,7 +54,7 @@ title:
 
 ---
 
- I am Zikang Yuan (袁子康), a postdoctoral fellow in AI Chip Center for Emerging Smart Systems (ACCESS), HongKong University of Science and Technology (**HKUST**). I am dedicated to research in **embodied intelligence** and **robotics**. Currently, I am focusing on two key subfields: **multi-sensor fusion SLAM** and **autonomous exploration** for mobile robots.
+ I am Zikang Yuan (袁子康), a postdoctoral fellow in AI Chip Center for Emerging Smart Systems (ACCESS), HongKong University of Science and Technology (**HKUST**). I am dedicated to research in **soft robotics**. Currently, I am focusing on two key subfields: **multi-sensor fusion SLAM** and **autonomous exploration** for mobile robots.
 
 I have a proven track record of producing high-quality research that is the **first author** of **11** papers in top-tier robotics and AI field, including **2×RA-L, 1×TPAMI journal, 3×IROS, 1×ICRA conference paper**. My first-author work, SR-LIO, won **championship** in the 2023 National SLAM Challenge. I actively contribute to open-source communities, with **2,000+ GitHub stars** and **480+ followers**.
 
