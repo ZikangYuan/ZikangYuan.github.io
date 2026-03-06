@@ -8,6 +8,17 @@ head_img_src:  "img/design/research-bg.jpg"
 
 
 pubs_list:
+
+  - title: "GRU-Based Kalman Filtering for 3D Multi-Object Tracking"
+    authors: "**Zikang Yuan**, Xiaoxiang Wang, Jiaxin Liu, Miaojie Feng, Zhaoxing Zhang, Xin Yang"
+    journal: "ICRA 2025"
+    year: 2025
+    links:
+      - name: Code
+        url: "https://github.com/ZikangYuan/voxel_svio](https://github.com/xiang-1208/GRUTrack" 
+
+
+
   
   - title: "Voxel-SVIO: Stereo Visual-Inertial Odometry based on Voxel Map"
     authors: "**Zikang Yuan**, Fengtian Lang, Jie Deng, Hongcheng Luo, Xin Yang"
