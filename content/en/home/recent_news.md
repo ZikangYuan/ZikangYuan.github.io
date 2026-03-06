@@ -21,10 +21,13 @@ design:
   columns: '1'
 ---
 
+**Jan 31, 2026** Paper accepted at ICRA 2026: GRU-Based Kalman Filtering for 3D Multi-Object Tracking
 
-**Jun 30, 2025** 以第一作者发表的工作SR-LIO被“杭州旗晟智能科技有限公司”落地应用
+**Nov 30, 2025** Awarded the Nomination Prize of the CSIG Outstanding Doctoral Dissertation
 
-**Jun 21, 2025** 以特邀专家的身份在移动测量大会(MMT 2025)上做技术报告
+**Jun 30, 2025** The first-author work SR-LIO has been deployed by Hangzhou Qisheng Intelligent Technology Co., Ltd.
+
+**Jun 21, 2025** Invited as an expert to deliver a technical presentation at the Mobile Measurement Technology Conference (MMT 2025).
 
 **Jun 15, 2025** Paper accepted at IROS 2025: LiDAR-Inertial Odometry in Dynamic Driving Scenarios using Label Consistency Detection
 
