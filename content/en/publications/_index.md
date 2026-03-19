@@ -167,7 +167,7 @@ pubs_list:
   
   
   
-  - title: "SDV-LOAM: Semi-Direct Visual–LiDAR Odometry and Mapping"
+  - title: "SDV-LOAM: Semi-Direct Visual-LiDAR Odometry and Mapping"
     authors: "**Zikang Yuan**, Qingjie Wang, Ken Cheng, Tianyu Hao, Xin Yang"
     journal: "TPAMI 2023"
     year: 2023
