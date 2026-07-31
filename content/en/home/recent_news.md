@@ -21,6 +21,10 @@ design:
   columns: '1'
 ---
 
+**Jul 31, 2026** Paper accepted at RA-L 2026: Aerial Exploration on Point Cloud Maps via Coverage Path Guidance
+
+**Jun 17, 2026** Paper accepted at IROS 2026: Multi-Resolution Voxelized Map-Based Stereo Visual-Inertial Odometry
+
 **Jan 31, 2026** Paper accepted at ICRA 2026: GRU-Based Kalman Filtering for 3D Multi-Object Tracking
 
 **Nov 30, 2025** Awarded the Nomination Prize of the CSIG Outstanding Doctoral Dissertation
