@@ -9,13 +9,23 @@ head_img_src:  "img/design/research-bg.jpg"
 
 pubs_list:
 
+   - title: "Multi-Resolution Voxelized Map-Based Stereo Visual-Inertial Odometry"
+    authors: "Shuyi Pan, Hangtian Wang, Zhaoxing Zhang, Chengliang Zhang, **Zikang Yuan**, Xin Yang"
+    journal: "IROS 2026 (**corresponding author**)"
+    year: 2026
+    links:
+      - name: PDF(arXiv)
+        url: "https://arxiv.org/abs/2607.17332"
+      - name: Code
+        url: "https://github.com/PANshuyi/MR-Voxel-SVIO" 
+
   - title: "GRU-Based Kalman Filtering for 3D Multi-Object Tracking"
     authors: "**Zikang Yuan**, Xiaoxiang Wang, Jiaxin Liu, Miaojie Feng, Zhaoxing Zhang, Xin Yang"
     journal: "ICRA 2026"
     year: 2026
     links:
       - name: Code
-        url: "https://github.com/ZikangYuan/voxel_svio](https://github.com/xiang-1208/GRUTrack" 
+        url: "https://github.com/xiang-1208/GRUTrack" 
 
 
 
