@@ -8,6 +8,14 @@ head_img_src:  "img/design/research-bg.jpg"
 
 
 pubs_list:
+  - title: "Aerial Exploration on Point Cloud Maps via Coverage Path Guidance"
+    authors: "**Zikang Yuan**, Yuan Ren, Yixue Wang, Leyi Zhao, Shangzhe Sun, Chi Chen, Lijun Zhu, XinYang, Kwang-Ting (Tim) Cheng"
+    journal: "RA-L 2026"
+    year: 2026
+    links:
+      - name: "Code"
+        url: "https://github.com/ZikangYuan/epicon"
+
   - title: "Multi-Resolution Voxelized Map-Based Stereo Visual-Inertial Odometry"
     authors: "Shuyi Pan, Hangtian Wang, Zhaoxing Zhang, Chengliang Zhang, **Zikang Yuan**, Xin Yang"
     journal: "IROS 2026 (**corresponding author**)"
