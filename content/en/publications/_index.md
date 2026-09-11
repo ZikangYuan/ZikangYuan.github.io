@@ -13,8 +13,23 @@ pubs_list:
     journal: "RA-L 2026"
     year: 2026
     links:
+      - name: PDF(arXiv)
+        url: "https://ieeexplore.ieee.org/document/11654530"
       - name: "Code"
         url: "https://github.com/ZikangYuan/epicon"
+       - name: BibTex
+        url: ""
+        click_paras: "1"
+    bibTex: |
+      @article{yuan2026aerial,
+          title={Aerial Exploration on Point Cloud Maps via Coverage Path Guidance},
+          author={Yuan, Zikang and Ren, Yuan and Wang, Yixue and Zhao, Leyi and Sun, Shangzhe and Chen, Chi and Zhu, Lijun and Yang, Xin and Cheng, Kwang-Ting},
+          journal={IEEE Robotics and Automation Letters},
+          year={2026},
+          volume={11},
+          number={10},
+          pages={11299-11306}
+      }
 
   - title: "Multi-Resolution Voxelized Map-Based Stereo Visual-Inertial Odometry"
     authors: "Shuyi Pan, Hangtian Wang, Zhaoxing Zhang, Chengliang Zhang, **Zikang Yuan**, Xin Yang"
