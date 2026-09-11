@@ -17,7 +17,7 @@ pubs_list:
         url: "https://ieeexplore.ieee.org/document/11654530"
       - name: "Code"
         url: "https://github.com/ZikangYuan/epicon"
-       - name: BibTex
+      - name: BibTex
         url: ""
         click_paras: "1"
     bibTex: |
