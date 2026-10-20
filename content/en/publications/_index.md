@@ -46,8 +46,21 @@ pubs_list:
     journal: "ICRA 2026"
     year: 2026
     links:
+      - name: PDF(arXiv)
+        url: "https://ieeexplore.ieee.org/document/11695767"
       - name: "Code"
         url: "https://github.com/xiang-1208/GRUTrack"
+      - name: BibTex
+        url: ""
+        click_paras: "1"
+    bibTex: |
+      @article{yuan2026gru,
+          title={GRU-Based Kalman Filtering for 3D Multi-Object Tracking},
+          author={Yuan, Zikang and Wang, Xiaoxiang and Liu, Jiaxin and Feng, Miaojie and Zhang, Zhaoxing and Yang, Xin},
+          booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)},
+          year={2026},
+          pages={5149-5156}
+      }
 
 
 
