@@ -59,7 +59,8 @@ pubs_list:
           author={Yuan, Zikang and Wang, Xiaoxiang and Liu, Jiaxin and Feng, Miaojie and Zhang, Zhaoxing and Yang, Xin},
           booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)},
           year={2026},
-          pages={5149-5156}
+          pages={5149-5156},
+          organization={IEEE}
       }
 
 
@@ -97,7 +98,7 @@ pubs_list:
     year: 2025
     links:
       - name: PDF(arXiv)
-        url: "https://arxiv.org/abs/2407.03590"
+        url: "https://ieeexplore.ieee.org/abstract/document/11246976"
       - name: Code
         url: "https://github.com/ZikangYuan/dynamic_lio"
       - name: BibTex
@@ -107,8 +108,10 @@ pubs_list:
       @article{yuan2024lidar,
           title={LiDAR-Inertial Odometry in Dynamic Driving Scenarios using Label Consistency Detection},
           author={Yuan, Zikang and Wang, Xiaoxiang and Wu, Jingying and Cheng, Junda and Yang, Xin},
-          journal={arXiv preprint arXiv:2407.03590},
-          year={2024}
+          booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+          pages={1598--1605},
+          year={2025},
+          organization={IEEE}
       } 
 
   
@@ -119,7 +122,7 @@ pubs_list:
     year: 2025
     links:
       - name: PDF(arXiv)
-        url: "https://arxiv.org/abs/2307.07792"
+        url: "https://ieeexplore.ieee.org/abstract/document/11128078"
       - name: Code
         url: "https://github.com/ZikangYuan/semi_elastic_lio"
       - name: BibTex
@@ -129,8 +132,10 @@ pubs_list:
       @article{yuan2023semi,
           title={Semi-elastic lidar-inertial odometry},
           author={Yuan, Zikang and Lang, Fengtian and Xu, Tianle and Ming, Ruiye and Zhao, Chengwei and Yang, Xin},
-          journal={arXiv preprint arXiv:2307.07792},
-          year={2023}
+          booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)},
+          pages={9855--9861},
+          year={2025},
+          organization={IEEE}
         }     
 
   
