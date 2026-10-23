@@ -21,6 +21,8 @@ design:
   columns: '1'
 ---
 
+**Oct 13, 2026** The first-author work "Aerial Exploration on Point Cloud Maps via Coverage Path Guidance" has been deployed by Guangzhou Yunzong Technology Co., Ltd.
+
 **Jul 31, 2026** Paper accepted at RA-L 2026: Aerial Exploration on Point Cloud Maps via Coverage Path Guidance
 
 **Jun 17, 2026** Paper accepted at IROS 2026: Multi-Resolution Voxelized Map-Based Stereo Visual-Inertial Odometry
@@ -29,7 +31,7 @@ design:
 
 **Nov 30, 2025** Awarded the Nomination Prize of the CSIG Outstanding Doctoral Dissertation
 
-**Jun 30, 2025** The first-author work SR-LIO has been deployed by Hangzhou Qisheng Intelligent Technology Co., Ltd.
+**Jun 30, 2025** The first-author work "SR-LIO: LiDAR-Inertial Odometry with Sweep Reconstruction" has been deployed by Hangzhou Qisheng Intelligent Technology Co., Ltd.
 
 **Jun 21, 2025** Invited as an expert to deliver a technical presentation at the Mobile Measurement Technology Conference (MMT 2025).
 
